@@ -1,5 +1,6 @@
 body {
   background-color: rgb(248, 179, 179);
+  font-family: Verdana;
 }
 h1 {
   color: rgb(235, 100, 123);
@@ -19,4 +20,13 @@ p {
 }
 a {
   color: rgb(216, 100, 172);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(136, 221, 129);
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.footer {
+  text-align: center;
 }
