@@ -1,32 +1,70 @@
 body {
-  background-color: rgb(248, 179, 179);
-  font-family: Verdana;
+    background-color: #E5EEDA;
+    font-family: "Courier New", Courier, monospace;
 }
+
+header {
+    background-color: #C0D6A6;
+    margin: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+nav {
+  
+
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin-left: 100px;
+  
+}
+
+nav a {
+    color: #444;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav a:hover {
+    color: white;
+    transition: all ease-in-out 500ms;
+}
+
+
+
+
+
 h1 {
-  color: rgb(235, 100, 123);
+  color: white;
   font-size: 24px;
+  padding: 0;
+  margin: 0;
 }
+
 p {
   color: rgb(194, 110, 61);
   font-size: 16px;
 }
+
 .intro {
   color: rgb(166, 124, 194);
 }
+
 /* why is this .intro not working AGHG?!*/
 /*apparently it needed to be wrapped in a <div for some reason*/
 .wrapper {
-  background-color: rgb(255, 236, 211);
+    background-color: #C0D6A6;
+    margin:20px;
 }
-a {
-  color: rgb(216, 100, 172);
-  text-decoration: none;
-}
-a:hover {
-  color: rgb(136, 221, 129);
-  text-decoration: underline;
-  text-transform: uppercase;
-}
+
+
 .footer {
   text-align: center;
 }
