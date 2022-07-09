@@ -1,44 +1,97 @@
 ﻿<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="HTML, CSS, JavaScript, GitHub" />
-    <!-- These metas dictate what characters to use, to be responsive regardless of screen size, and keywords for SEO-->
-    <title>Alekzandria</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-        <div class="nav">
-             <nav>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-             </nav>
-         </div>
-        <div>
-          <h1> Hi. I'm Alekz. I made this website. </h1>
-          <h2>I made the background black because dark mode >> & I care about your eyes —You're welcome.</h2>
-        </div>
-    </header>
-    <img src ="images/undraw_lost_online_re_upmy.svg" height="300px"/>
-
-    <h2>I'm a self-taught web developer, which means I like to</h2>
-    <h3>break the rules </h3>
-    <h1>& think outside the box.</h1>
-    <section>
-      <p>This is a bit of a work in progress at the moment. As I'm sure you can tell by the dummy text...</p>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore alias ad nisi recusandae sint minima deserunt blanditiis ratione quia perferendis, eaque pariatur expedita! Commodi, voluptate rerum? Veritatis laboriosam nobis illum!</p>
-    </section>
-    <h2> Contact me on Twitter <a href="https://www.twitter.com/alekzandriia">@Alekzandriia</a></h2>
-    <footer>
-      Made with &hearts; in Canada 2022 &copy; 
-    </footer>
-  </body>
+<html lang="en">
+<head>
+  <title>Alekzandriia</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Alekzandriia">
+  <meta name="description" content="Learn CS with Me">
+  <meta property="og:title" content="Alekz: Learn CS with Me">
+  <meta property="og:description" content="Road to Full-Stack Developer">
+  <meta property="og:image" content="/some-image.png">
+  <meta property="og:url" content="/this-page.html">
+  <meta property="og:site_name" content="Alekzandriia">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="image description">
+  <link href="style.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class= "navbar">
+    <ul class="navbar-nav">
+      <li class ="logo">
+        <a href="#" class="nav-link" id="test">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M414.8 40.79L286.8 488.8C281.9 505.8 264.2 515.6 247.2 510.8C230.2 505.9 220.4 488.2 225.2 471.2L353.2 23.21C358.1 6.216 375.8-3.624 392.8 1.232C409.8 6.087 419.6 23.8 414.8 40.79H414.8zM518.6 121.4L630.6 233.4C643.1 245.9 643.1 266.1 630.6 278.6L518.6 390.6C506.1 403.1 485.9 403.1 473.4 390.6C460.9 378.1 460.9 357.9 473.4 345.4L562.7 256L473.4 166.6C460.9 154.1 460.9 133.9 473.4 121.4C485.9 108.9 506.1 108.9 518.6 121.4V121.4zM166.6 166.6L77.25 256L166.6 345.4C179.1 357.9 179.1 378.1 166.6 390.6C154.1 403.1 133.9 403.1 121.4 390.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4L121.4 121.4C133.9 108.9 154.1 108.9 166.6 121.4C179.1 133.9 179.1 154.1 166.6 166.6V166.6z"/></svg>
+          <span class="link-text">Alekz<span>
+        </a>
+      </li>
+      <li class ="nav-item">
+        <a href="#" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M451.4 369.1C468.8 356 480 335.4 480 312c0-39.75-32.25-72-72-72h-14.12C407.3 228.2 416 211.2 416 191.1c0-35.25-28.75-63.1-64-63.1h-5.875C349.8 117.9 352 107.2 352 95.1c0-53-43-96-96-96c-5.25 0-10.25 .75-15.12 1.5C250.3 14.62 256 30.62 256 47.1c0 44.25-35.75 80-80 80H160c-35.25 0-64 28.75-64 63.1c0 19.25 8.75 36.25 22.12 48H104C64.25 239.1 32 272.3 32 312c0 23.38 11.25 44 28.62 57.13C26.25 374.6 0 404.1 0 440C0 479.8 32.25 512 72 512h368c39.75 0 72-32.25 72-72C512 404.1 485.8 374.6 451.4 369.1zM192 256c17.75 0 32 14.25 32 32s-14.25 32-32 32S160 305.8 160 288S174.3 256 192 256zM351.5 395C340.1 422.9 292.1 448 256 448c-36.99 0-84.98-25.12-95.48-53C158.5 389.8 162.5 384 168.3 384h175.5C349.5 384 353.5 389.8 351.5 395zM320 320c-17.75 0-32-14.25-32-32s14.25-32 32-32s32 14.25 32 32S337.8 320 320 320z"/></svg>
+          <span class="link-text">Cats<span>
+        </a>
+      </li>
+      <li class ="nav-item">
+        <a href="#" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M186.1 .1032c-105.1 3.126-186.1 94.75-186.1 199.9v264c0 14.25 17.3 21.38 27.3 11.25l24.95-18.5c6.625-5.001 16-4.001 21.5 2.25l43 48.31c6.25 6.251 16.37 6.251 22.62 0l40.62-45.81c6.375-7.251 17.62-7.251 24 0l40.63 45.81c6.25 6.251 16.38 6.251 22.62 0l43-48.31c5.5-6.251 14.88-7.251 21.5-2.25l24.95 18.5c10 10.13 27.3 3.002 27.3-11.25V192C384 83.98 294.9-3.147 186.1 .1032zM128 224c-17.62 0-31.1-14.38-31.1-32.01s14.38-32.01 31.1-32.01s32 14.38 32 32.01S145.6 224 128 224zM256 224c-17.62 0-32-14.38-32-32.01s14.38-32.01 32-32.01c17.62 0 32 14.38 32 32.01S273.6 224 256 224z"/></svg>
+          <span class="link-text">Ghosts<span>
+        </a>
+      </li>
+      <li class ="nav-item">
+        <a href="#" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M18.43 255.8L192 224L100.8 292.6C90.67 302.8 97.8 320 112 320h222.7c-9.499-26.5-14.75-54.5-14.75-83.38V194.2L200.3 106.8C176.5 90.88 145 92.75 123.3 111.2l-117.5 116.4C-6.562 238 2.436 258 18.43 255.8zM575.2 289.9l-100.7-50.25c-16.25-8.125-26.5-24.75-26.5-43V160h63.99l28.12 22.62C546.1 188.6 554.2 192 562.7 192h30.1c11.1 0 23.12-6.875 28.5-17.75l14.37-28.62c5.374-10.87 4.25-23.75-2.999-33.5l-74.49-99.37C552.1 4.75 543.5 0 533.5 0H296C288.9 0 285.4 8.625 290.4 13.62L351.1 64L292.4 88.75c-5.874 3-5.874 11.37 0 14.37L351.1 128l-.0011 108.6c0 72 35.99 139.4 95.99 179.4c-195.6 6.75-344.4 41-434.1 60.88c-8.124 1.75-13.87 9-13.87 17.38C.0463 504 8.045 512 17.79 512h499.1c63.24 0 119.6-47.5 122.1-110.8C642.3 354 617.1 310.9 575.2 289.9zM489.1 66.25l45.74 11.38c-2.75 11-12.5 18.88-24.12 18.25C497.7 95.25 484.8 83.38 489.1 66.25z"/></svg>
+          <span class="link-text">Dragons<span>
+        </a>
+      </li>
+      <li class ="nav-item">
+        <a href="#" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M377.7 338.8l37.15-92.87C419 235.4 411.3 224 399.1 224h-57.48C348.5 209.2 352 193 352 176c0-4.117-.8359-8.057-1.217-12.08C390.7 155.1 416 142.3 416 128c0-16.08-31.75-30.28-80.31-38.99C323.8 45.15 304.9 0 277.4 0c-10.38 0-19.62 4.5-27.38 10.5c-15.25 11.88-36.75 11.88-52 0C190.3 4.5 181.1 0 170.7 0C143.2 0 124.4 45.16 112.5 88.98C63.83 97.68 32 111.9 32 128c0 14.34 25.31 27.13 65.22 35.92C96.84 167.9 96 171.9 96 176C96 193 99.47 209.2 105.5 224H48.02C36.7 224 28.96 235.4 33.16 245.9l37.15 92.87C27.87 370.4 0 420.4 0 477.3C0 496.5 15.52 512 34.66 512H413.3C432.5 512 448 496.5 448 477.3C448 420.4 420.1 370.4 377.7 338.8zM176 479.1L128 288l64 32l16 32L176 479.1zM271.1 479.1L240 352l16-32l64-32L271.1 479.1zM320 186C320 207 302.8 224 281.6 224h-12.33c-16.46 0-30.29-10.39-35.63-24.99C232.1 194.9 228.4 192 224 192S215.9 194.9 214.4 199C209 213.6 195.2 224 178.8 224h-12.33C145.2 224 128 207 128 186V169.5C156.3 173.6 188.1 176 224 176s67.74-2.383 96-6.473V186z"/></svg>
+          <span class="link-text">Secrets<span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+  <h1 title="That's Hello in Esperanto-- the world's most widely spoken constructed international auxiliary language.">Saluton!</h1>
+  <p>I'm Alekz. I made this website with just my fingers & a keyboard. Pretty cool, <i>huh?</i></p> 
+  <p>I'm a <span class="em">community-taught developer</span>, which means I learned everything I know from the very best & most talented devs in the tech community. 💖</p>
+  <img class="peace-sign" src="images/casual-life-3d-young-woman-working-on-laptop-and-showing-v-sign.png" alt="young woman working on laptop making a peace sign."/>
+  <h1>H1 Header</h1> 
+   <h2>H2 Header</h2>
+   <h3> H3 Header </h3>
+   <a href="#">Link</a>
+   <p>I'm baby cliche knausgaard cred man braid listicle shoreditch godard, kale chips selvage whatever polaroid flannel poutine ethical. +1 tbh sartorial roof party tilde four dollar toast lyft direct trade bicycle rights iPhone tonx. Man braid cloud bread neutra, franzen retro keytar direct trade. Squid tilde celiac, etsy cardigan narwhal blog banjo coloring book neutra gochujang. Green juice lo-fi selvage, yes plz fashion axe synth keytar sartorial migas ethical gluten-free la croix umami flannel. Church-key praxis air plant post-ironic, forage chicharrones palo santo humblebrag messenger bag man braid plaid copper mug truffaut.</p>
+  <p> Banh mi XOXO church-key tumblr YOLO mlkshk hell of synth. La croix kombucha deep v selvage, austin DSA lyft vaporware pok pok yuccie. Four loko stumptown pork belly ennui, fixie blue bottle hella skateboard slow-carb sriracha messenger bag fanny pack mixtape gastropub kale chips. Cliche actually YOLO pok pok schlitz roof party, slow-carb shaman 8-bit. Williamsburg activated charcoal vape, chartreuse try-hard +1 hot chicken XOXO ugh venmo taxidermy gluten-free locavore raw denim.
+    
+    Small batch hammock etsy, truffaut adaptogen pitchfork mustache butcher paleo leggings. Gastropub mlkshk 8-bit stumptown kale chips hoodie put a bird on it 3 wolf moon. Ugh prism pitchfork, echo park selfies slow-carb cardigan. Vexillologist unicorn flexitarian twee iPhone humblebrag.
+    
+    Tbh tacos cardigan, paleo farm-to-table kickstarter vinyl readymade slow-carb hoodie fashion axe ethical. Direct trade cardigan freegan sriracha austin chillwave tilde try-hard. Ugh schlitz salvia, 8-bit crucifix kombucha tousled fanny pack normcore roof party pork belly you probably haven't heard of them. Viral coloring book small batch authentic salvia organic +1 sriracha craft beer gochujang meditation single-origin coffee shaman chicharrones chia.
+    
+    Deep v tattooed before they sold out banjo, hot chicken flexitarian kinfolk hexagon. Adaptogen artisan hoodie, retro williamsburg flannel kale chips sriracha enamel pin. Pop-up mixtape next level, vape jean shorts cred normcore palo santo brooklyn mustache hashtag ugh praxis you probably haven't heard of them knausgaard. Aesthetic everyday carry edison bulb kogi meh tofu pabst shaman pork belly tumblr +1 humblebrag cliche narwhal.
+    
+    Disrupt beard woke deep v. Edison bulb photo booth four loko copper mug 8-bit cornhole. Venmo food truck yuccie hell of 8-bit. Sriracha twee butcher retro. Wayfarers next level typewriter, ugh drinking vinegar pinterest stumptown.
+    
+    Leggings hella locavore green juice yr DIY hammock microdosing. Mlkshk chicharrones VHS la croix etsy fashion axe DSA, put a bird on it direct trade knausgaard hot chicken. Tousled jianbing meh +1 fashion axe slow-carb. +1 skateboard single-origin coffee kinfolk tilde master cleanse 3 wolf moon squid. Irony trust fund copper mug, hell of vape scenester cornhole roof party. Hell of tumeric tousled pinterest.
+    
+    Fashion axe paleo lumbersexual mlkshk, hella messenger bag vape street art cornhole. Kale chips flexitarian iPhone pop-up aesthetic kombucha man braid af VHS vexillologist. Glossier affogato aesthetic meh. Actually la croix normcore farm-to-table shoreditch freegan small batch chia gentrify forage next level chicharrones kitsch bicycle rights etsy. Keytar pug vice helvetica, gentrify swag cred seitan farm-to-table cardigan.
+    
+    Meh celiac craft beer meggings, brooklyn iceland tilde hashtag af man bun. Occupy succulents put a bird on it lumbersexual, mixtape keytar you probably haven't heard of them pok pok. Vexillologist tattooed helvetica, ramps yes plz seitan migas kale chips williamsburg pok pok tonx fingerstache. Next level irony post-ironic kale chips, cray XOXO mlkshk bushwick adaptogen vexillologist raclette vape.
+    
+    Letterpress pug coloring book artisan, roof party pork belly shabby chic. YOLO wayfarers subway tile iceland, health goth tonx hella keffiyeh street art squid selvage cloud bread chillwave +1. Pinterest lo-fi roof party portland live-edge small batch bushwick tumblr squid 8-bit. Meggings meh quinoa snackwave deep v narwhal stumptown yuccie. Microdosing af tumblr synth crucifix. Cardigan edison bulb single-origin coffee locavore twee freegan portland fam scenester normcore literally palo santo pabst synth.
+    
+    Fingerstache DIY meh +1 street art meggings, raw denim waistcoat poutine. Man bun farm-to-table palo santo, chicharrones organic meditation banh mi knausgaard iceland hexagon vape heirloom chia. Trust fund distillery fam 90's lyft narwhal kombucha kogi mumblecore woke. IPhone crucifix next level jean shorts praxis.
+    
+    Adaptogen vinyl jianbing trust fund, kitsch green juice irony succulents activated charcoal taiyaki kinfolk mumblecore lumbersexual shabby chic keffiyeh. Typewriter ethical pour-over mixtape. Chia meggings seitan tumblr sartorial man bun austin pitchfork twee mlkshk cray freegan chartreuse. Succulents paleo meditation flannel humblebrag twee everyday carry cold-pressed.
+    
+    Helvetica roof party williamsburg cliche yes plz chartreuse marfa. Four loko fanny pack kinfolk seitan, paleo actually hashtag snackwave locavore shabby chic art party heirloom truffaut adaptogen. Salvia asymmetrical bitters 90's man braid ethical. Heirloom austin hashtag, fashion axe plaid YOLO shaman viral jianbing PBR&B cornhole 3 wolf moon tote bag lumbersexual farm-to-table. Hell of whatever fingerstache, adaptogen VHS jianbing before they sold out swag affogato food truck umami. Kombucha kickstarter mustache air plant. Raw denim praxis hashtag ethical, selfies kale chips bespoke iceland literally pabst.</p>
+    
+    <section>Gastropub cred helvetica paleo cloud bread ethical semiotics ennui. Truffaut readymade bespoke tumblr. Everyday carry food truck jianbing crucifix meh kickstarter normcore fam yes plz portland DIY humblebrag photo booth. IPhone flexitarian schlitz taxidermy direct trade prism ramps chartreuse fam vexillologist single-origin coffee farm-to-table.</section>
+    
+    <p>Put a bird on it snackwave lo-fi gluten-free vape. Glossier tilde flexitarian cray sriracha artisan crucifix. Plaid viral hot chicken, polaroid flannel offal 8-bit pinterest. Literally tumblr lumbersexual, pabst seitan banh mi umami food truck sartorial scenester crucifix. Tote bag beard distillery pour-over pickled hoodie man braid brooklyn roof party. Pop-up cred mlkshk, hell of schlitz tbh farm-to-table.
+    
+    Dummy text? More like dummy thicc text, amirite?</p> 
+  </main>
+  <footer> <p class="copyright">© 2022 Alekzandriia. All Rights Reserved.</p></footer>
+</body>
 </html>
