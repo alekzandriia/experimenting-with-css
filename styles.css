@@ -24,7 +24,8 @@
     flex-direction:column;
   }
   main, header {
-    margin-left: 10rem;
+    margin-left: 7rem;
+    margin-right: 5rem;
   }
 
 
@@ -36,6 +37,7 @@
     bottom: 0;
     width:100vw;
     height:5rem;
+    z-index: 1000;
   }
   .logo {
     display:none;
@@ -47,8 +49,9 @@
     justify-content: center;
   }
   main, header {
-    margin-left: 2rem;
-    margin-bottom: 6rem;
+    margin-left: 0.5rem;
+    margin-bottom: 5rem;
+    margin-right: 2rem;
   }
   section {
     padding:1rem;
@@ -63,8 +66,11 @@ body {
   background-color: black;
   font-size: 16px;
   color:white;
-  width: 95%;
   max-width: 850px;
+  margin-right: 5rem;
+  display: grid;
+  grid-template-columns: auto 1px; 
+  grid-template-rows: auto auto auto 0;
 }
 
 h1 {
@@ -114,6 +120,13 @@ a:hover {
   color:#fcc545;
 }
 
+.em {
+  font-weight: 700;
+  background: -webkit-radial-gradient(circle, #b9a8fd 0%, #fd1d83 50%, #fcc545 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /*** SCROLLBAR ***/
 body::-webkit-scrollbar {
   width:0.25rem;
@@ -129,7 +142,6 @@ body::-webkit-scrollbar-thumb {
 
 /*** NAV BAR ***/
 .navbar {
-
 	position:fixed;
 	background-color:#212121;
 	transition: width 200ms ease;
@@ -188,11 +200,15 @@ body::-webkit-scrollbar-thumb {
 
 /** SPECIFIC STYLES **/
 
-.em {
-  font-weight: 700;
-  background: -webkit-radial-gradient(circle, #b9a8fd 0%, #fd1d83 50%, #fcc545 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+header {
+  padding: 50px 10px; 
+  text-align: center; 
+  position: block; /
+  top: 0; 
+  height:100vh;
+  max-width: 100vw;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .peace-sign {
@@ -213,38 +229,46 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-footer {
-  margin-left: 5rem;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-}
-.copyright {
-  font-size: 0.75rem;
-  color:#b9a8fd;
-}
-
-header {
-  padding: 50px 10px; /* Some padding */
-  text-align: center; /* Centered text */
-  position: block; /* Fixed position - sit on top of the page */
-  top: 0; 
-  height:100vh;
-  max-width: 100vw;
-}
-
 .button {
-  padding:1rem 2rem;
+  padding:1rem 3rem;
   margin-top: 2rem;
   background-color:#b9a8fd;
   border-radius:20px;
   display:inline-block;
   font-size: 1.5rem;
   box-shadow: 0px 5px #8f82c3;
-  ;
- 
 }
-
+s
 .button:hover {
   transform: translateY(3px);
+}
+
+footer {
+  margin-left: 0rem;
+  margin-bottom: 5rem;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.copyright {
+  font-size: 0.75rem;
+  color:#b9a8fd;
+}
+
+.top {
+  --offset: 50px; 
+
+  position: sticky;
+  bottom: 5rem;      
+  margin-right: -40px; 
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+  text-align: center;
+  font-size: smaller;
+  animation-duration: 2s;
+  animation-name: slide-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
