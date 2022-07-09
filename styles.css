@@ -23,6 +23,15 @@
   .navbar-nav {
     flex-direction:column;
   }
+  .top {
+    font-size: small;
+  }
+  .top img {
+    width:6rem;
+    opacity:80%;
+    padding:0.55rem;
+
+  }
   main, header {
     margin-left: 7rem;
     margin-right: 5rem;
@@ -48,11 +57,19 @@
   .nav-link {
     justify-content: center;
   }
-  main, header {
+  main {
     margin-left: 0.5rem;
-    margin-bottom: 5rem;
-    margin-right: 2rem;
+    margin-right: 3rem;
   }
+  .top {
+    font-size:x-small;
+  }
+  .top img {
+    width:4rem;
+    opacity:80%;
+    padding:0.5rem;
+  }
+ 
   section {
     padding:1rem;
     margin:1rem;
@@ -67,7 +84,6 @@ body {
   font-size: 16px;
   color:white;
   max-width: 850px;
-  margin-right: 5rem;
   display: grid;
   grid-template-columns: auto 1px; 
   grid-template-rows: auto auto auto 0;
@@ -262,13 +278,18 @@ footer {
 
   position: sticky;
   bottom: 5rem;      
-  margin-right: -40px; 
+  margin-right: 0.25rem;
   place-self: end;
   margin-top: calc(100vh + var(--offset));
   text-align: center;
-  font-size: smaller;
   animation-duration: 2s;
   animation-name: slide-in;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+}
+
+
+
+.top img:hover {
+  opacity:100%;
 }
