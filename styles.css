@@ -25,15 +25,18 @@
   }
   .top {
     font-size: small;
+    overflow: hidden;
   }
   .top img {
     width:6rem;
     opacity:80%;
     padding:0.55rem;
+    overflow: hidden;
 
   }
   main, header {
-    margin-left: 7rem;
+    margin-left: 5.5rem;
+    max-width:700px;
     margin-right: 5rem;
   }
 
@@ -82,7 +85,7 @@ body {
   background-color: black;
   font-size: 16px;
   color:white;
-  max-width: 850px;
+  max-width: 950px;
   display: grid;
   grid-template-columns: auto 1px; 
   grid-template-rows: auto auto auto 0;
